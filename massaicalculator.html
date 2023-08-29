@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: 2px solid grey;
+            background-color: pink;
+            height: 50px;
+            width: 100px;
+        }
+        input{
+            border: 2px solid grey;
+            background-color: paleturquoise;
+            height: 20px;
+            width: 150px;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="inp1" placeholder="enter first number">
+    <input type="text" name="" id="inp2" placeholder="enter second number">
+    <br>
+    <br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="div()">Division</button>
+    <button onclick="mul()">Multiplication</button>
+
+    <script>
+         function add(){
+           let input1=document.getElementById("inp1").value
+           let input2=document.getElementById("inp2").value
+           let ans= +input1 + +input2
+           alert(ans)
+         }
+         function sub(){
+            let input1=document.getElementById("inp1").value
+           let input2=document.getElementById("inp2").value
+           let ans= +input1 - +input2
+           alert(ans)
+        }
+        function div(){
+            let input1=document.getElementById("inp1").value
+           let input2=document.getElementById("inp2").value
+           let ans= +input1 / +input2
+           alert(ans)
+        }
+        function mul(){
+            let input1=document.getElementById("inp1").value
+           let input2=document.getElementById("inp2").value
+           let ans= +input1 * +input2
+           alert(ans)
+        }
+    </script>
+</body>
+</html>
